@@ -1,0 +1,15 @@
+package com.sotatek.common;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Suburb {
+	
+	private String name;
+	
+	private String postcode;
+}

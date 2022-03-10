@@ -3,39 +3,17 @@ You need to have maven environment (mvn) and java
 
 # Steps
 
-1. Use the cd command to go to the parent folder
+open terminal, cd into the repo then run the following commands
 ```bash
 cd parent
-```
-
-2. Build parent
-```bash
 mvn package
-```
-
-3. Installing a jar file created by maven to local repo
-```bash
-mvn install:install-file  
-      -Dfile={path-to-your-parent}\parent\common\target\common-0.0.1-SNAPSHOT.jar 
-      -DgroupId=com.sotatek.d5 
-      -DartifactId=common 
-      -Dversion=0.0.1-SNAPSHOT 
-      -Dpackaging=jar 
-      -DgeneratePom=true
-```
-   *Replace: {path-to-your-parent}*
-
-4. Build Australia project
-```bash
+cd ..
+mvn install:install-file -Dfile=parent\data\target\data-0.0.1-SNAPSHOT.jar -DgroupId=com.sotatek.d5 -DartifactId=data -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
+mvn install:install-file -Dfile=parent\common-internal\target\common-internal-0.0.1-SNAPSHOT.jar -DgroupId=com.sotatek.d5 -DartifactId=common-internal -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
 cd Australia
-mvn package
+mvn spring-boot:run
 ```
-
-5. Run Australia project
-```bash
-cd Australia/target
-java -jar australia-1.0.0-SNAPSHOT.jar
-```
+*you can use postman export to test if you have completed the above steps*
 
 
 

@@ -1,5 +1,5 @@
 # Prerequisite
-You need to have maven environment (mvn) and java
+You need to have maven environment (mvn)
 
 # Steps
 

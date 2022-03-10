@@ -1,5 +1,5 @@
 # Prerequisite
-You need to have maven environment (mvn)
+You need to have maven environment (mvn) and port 8090 is available
 
 # Steps
 

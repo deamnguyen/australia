@@ -6,7 +6,6 @@
 		<artifactId>parent</artifactId>
         <groupId>com.sotatek.d5</groupId>
         <version>0.0.1-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	
 	<artifactId>australia</artifactId>
@@ -18,7 +17,13 @@
 	<dependencies>
 		<dependency>
             <groupId>com.sotatek.d5</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>data</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sotatek.d5</groupId>
+            <artifactId>common-internal</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -34,15 +39,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-tomcat</artifactId>
+	        <scope>provided</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

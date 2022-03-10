@@ -8,7 +8,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modules>
-        <module>common</module>
+        <module>data</module>
         <module>common-internal</module>
     </modules>
 
@@ -36,7 +36,7 @@
             </dependency>
             <dependency>
                 <groupId>com.sotatek.d5</groupId>
-                <artifactId>common</artifactId>
+                <artifactId>data</artifactId>
                 <version>${project.parent.version}</version>
             </dependency>
 

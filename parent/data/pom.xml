@@ -9,16 +9,22 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>common-internal</artifactId>
+    <artifactId>data</artifactId>
     <packaging>jar</packaging>
 
-
     <dependencies>
-        <!-- SPRING -->
+        <!-- HTTP -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
 

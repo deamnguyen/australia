@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "bc54b402-6670-4481-886e-921425bc4e8b",
+		"name": "Australia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/suburb/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"suburb",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by postcodes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"postcodes\": [\r\n        \"2850\",\r\n        \"2137\",\r\n        \"2390\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/suburb/postcode",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"suburb",
+						"postcode"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

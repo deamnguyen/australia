@@ -13,7 +13,7 @@ mvn install:install-file -Dfile=parent\common-internal\target\common-internal-0.
 cd Australia
 mvn spring-boot:run
 ```
-*you can use postman export to test if you have completed the above steps*
+*you can use postman export (Australia.postman_collection.json file) to test if you have completed the above steps*
 
 
 
